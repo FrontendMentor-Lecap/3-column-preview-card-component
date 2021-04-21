@@ -30,8 +30,7 @@ body {
 }
 
 .category {
-  min-width: 100%;
-  padding: 5vh 20vw;
+  padding: 10vh 4em;
   background-color: var(--vdrk-cyan);
 }
 
@@ -65,10 +64,47 @@ body {
   border-radius: 2em;
 }
 
+.button:hover {
+  background-color: unset;
+  color: var(--vlgt-gray);
+  border: 2px solid var(--vlgt-gray);
+}
+
 .sedan-button {
   color: var(--brt-orange);
 }
 
 .suv-button {
   color: var(--drk-cyan);
+}
+
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    place-content: center;
+  }
+  .container {
+    flex-direction: row;
+    align-items: unset;
+    min-height: 100%;
+    margin: 0;
+    max-width: 60rem;
+  }
+
+  .category {
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 100%;
+  }
+
+  .category__description {
+    margin: 2em 0 5em;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0%;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
 }

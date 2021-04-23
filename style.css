@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--vlgt-gray);
 }
 
 .container {
@@ -31,12 +32,8 @@ body {
 }
 
 .category {
-  padding: 5vh 4em;
+  padding: 8vh 3em;
   background-color: var(--vdrk-cyan);
-}
-
-.category img {
-  width: 3rem;
 }
 
 .category:nth-of-type(1) {
@@ -50,7 +47,7 @@ body {
 .category__name {
   text-transform: uppercase;
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Big Shoulders Display', cursive;
 }
 
@@ -98,7 +95,6 @@ body {
     overflow: hidden;
     max-width: 100%;
     min-height: 100%;
-    padding: 10vh 4em;
   }
 
   .category__description {
